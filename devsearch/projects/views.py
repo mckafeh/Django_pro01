@@ -3,26 +3,6 @@ from django.http import HttpResponse
 from projects.models import project
 
 
-projectsList = [
-    {
-        'id':'1',
-        'title':"Ecommerce website",
-        'description': 'Fully functionla ecommerce web site'
-    },
-    {
-        'id':'2',
-        'title':"Portfolio website",
-        'description': 'This was a prject where I built out my portfolio'
-    },
-
-    {
-        'id':'3',
-        'title':"Socila Network",
-        'description': 'Awesome open source project I am still working'
-    },
-
-]
-
 def projects(request):
     #return HttpResponse('here are our products')
      projects = Project.objects.all()
